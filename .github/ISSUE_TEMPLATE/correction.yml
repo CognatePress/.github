@@ -1,0 +1,73 @@
+name: Correction
+description: Report a claim, figure or code sample that is wrong.
+title: "Correction: "
+labels: ["correction"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Corrections are made on the page that carried the claim, with the date and
+        the evidence that changed it. A correction is held to the same standard as
+        the claim it corrects, so the evidence field is required.
+
+        If the article is on a publication's own domain, writing to `contact@` that
+        domain reaches its byline directly and is usually faster.
+
+  - type: dropdown
+    id: publication
+    attributes:
+      label: Publication
+      options:
+        - ElephantPHP (PHP)
+        - JS Ledger (JavaScript)
+        - JVM Scope (Java)
+        - PyDepth (Python)
+        - SQLPress (SQL)
+        - Gopheria (Go)
+        - Cognate Press (the imprint site)
+    validations:
+      required: true
+
+  - type: input
+    id: url
+    attributes:
+      label: Article
+      description: The full URL of the page carrying the claim.
+      placeholder: https://example.com/blog/the-article/
+    validations:
+      required: true
+
+  - type: textarea
+    id: claim
+    attributes:
+      label: The claim as published
+      description: Quote the sentence, figure or code sample exactly as it appears.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is wrong with it
+    validations:
+      required: true
+
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidence
+      description: >-
+        The source that says otherwise, or a measurement: the version, the machine,
+        the command, and the output it produced. Paste output rather than
+        summarising it. A reproduction short enough to read is worth more than a
+        description of one.
+      render: text
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Environment
+      description: Language or database version, OS, and hardware, where the claim depends on them.
+      placeholder: "Go 1.25.0, linux/amd64, Ryzen 7 5800X, 32 GB"

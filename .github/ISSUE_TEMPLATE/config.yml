@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Correcting an article
+    url: https://cognate.press/publications
+    about: Each title answers at contact@ its own domain. Writing there reaches the byline directly.
+  - name: About the imprint
+    url: https://cognate.press/about
+    about: What Cognate Press is, what it is not, and the standard every title is held to.
+  - name: Rights, press and the newsletter
+    url: https://cognate.press/contact
+    about: Anything about the imprint as a whole goes to contact@cognate.press.

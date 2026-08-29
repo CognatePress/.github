@@ -1,7 +1,9 @@
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="./assets/mark-dark.svg">
-  <img src="./assets/mark-light.svg" alt="Cognate Press" height="30">
-</picture>
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="./assets/mark-dark.svg">
+    <img src="./assets/mark-light.svg" alt="Cognate Press" height="30">
+  </picture>
+</p>
 
 # Cognate Press
 
